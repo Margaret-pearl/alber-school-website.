@@ -89,15 +89,80 @@
 
 </section>
 
-<!-- CTA -->
+<!-- Online Admission Form -->
 
-<section class="admission-cta">
+<section class="admission-form">
 
-    <h2>Ready to Join Us?</h2>
+    <h2>Online Admission Application</h2>
 
-    <p>We look forward to welcoming your child to ALBER SCHOOL.</p>
+    <p>Complete the form below to apply for admission.</p>
 
-    <a href="contact.html" class="btn">Apply Today</a>
+ <form name="admission" method="POST" data-netlify="true" action="success.html">
+
+        <input type="hidden" name="form-name" value="admission">
+
+        <div class="form-group">
+            <label>Student Full Name</label>
+            <input type="text" name="student_name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Grade Applying For</label>
+            <select name="grade" required>
+                <option value="">Select Grade</option>
+                <option>PP1</option>
+                <option>PP2</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Parent/Guardian Name</label>
+            <input type="text" name="parent_name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label>Home Address</label>
+            <textarea name="address" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Additional Information</label>
+            <textarea name="message" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Application</button>
+
+    </form>
 
 </section>
 
